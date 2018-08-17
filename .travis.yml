@@ -4,7 +4,7 @@ os:
 python:
   - "3.5"
   - "3.6"
-  - "nightly"
+  - "3.7"
 # command to run tests
 install: python setup.py develop
 script: python setup.py test
