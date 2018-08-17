@@ -9,6 +9,10 @@ matrix:
       env: TOXENV=py37
       dist: xenial
       sudo: true
+    - python: "3.8-dev"
+      env: TOXENV=3.8-dev
+      dist: xenial
+      sudo: true
 # command to run tests
 install: python setup.py develop
 script: python setup.py test
