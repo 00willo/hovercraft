@@ -13,6 +13,14 @@ matrix:
       env: TOXENV=3.8-dev
       dist: xenial
       sudo: true
+    - python: "nightly"
+      env: TOXENV=nightly
+      dist: xenial
+      sudo: true
+allow_failures:
+  - python: '3.8-dev'
+  - python: 'nightly'
+
 # command to run tests
 install: python setup.py develop
 script: python setup.py test
